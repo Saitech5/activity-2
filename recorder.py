@@ -36,3 +36,7 @@ for i in range(int(record_seconds * fps)):
     # if the user clicks q, it exits
     if cv2.waitKey(1) == ord("q"):
         break
+
+# make sure everything is closed when exited
+cv2.destroyAllWindows()
+out.release()
