@@ -33,3 +33,6 @@ for i in range(int(record_seconds * fps)):
     # show the frame
     cv2.imshow("screenshot", frame)
     
+    # if the user clicks q, it exits
+    if cv2.waitKey(1) == ord("q"):
+        break
