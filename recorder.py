@@ -24,4 +24,6 @@ for i in range(int(record_seconds * fps)):
     # convert these pixels to a proper numpy array to work with OpenCV
     frame = np.array(img)
 
+    # convert colors from BGR to RGB
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
