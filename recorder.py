@@ -18,3 +18,10 @@ out = cv2.VideoWriter("output.avi", fourcc, fps, (SCREEN_SIZE))
 record_seconds = 10
 
 for i in range(int(record_seconds * fps)):
+    # make a screenshot
+    img = pyautogui.screenshot()
+
+    # convert these pixels to a proper numpy array to work with OpenCV
+    frame = np.array(img)
+
+    
