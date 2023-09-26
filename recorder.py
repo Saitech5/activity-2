@@ -29,4 +29,7 @@ for i in range(int(record_seconds * fps)):
     
     # write the frame
     out.write(frame)
+
+    # show the frame
+    cv2.imshow("screenshot", frame)
     
