@@ -13,3 +13,6 @@ fps = 12.0
 
 # create the video write object
 out = cv2.VideoWriter("output.avi", fourcc, fps, (SCREEN_SIZE))
+
+# the time you want to record in seconds
+record_seconds = 10
