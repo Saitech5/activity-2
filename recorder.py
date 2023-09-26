@@ -4,3 +4,6 @@ import pyautogui
 
 # display screen resolution, get it using pyautogui itself
 SCREEN_SIZE = tuple(pyautogui.size())
+
+# define the codec
+fourcc = cv2.VideoWriter_fourcc(*"XVID")
