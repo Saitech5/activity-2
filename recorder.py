@@ -27,3 +27,6 @@ for i in range(int(record_seconds * fps)):
     # convert colors from BGR to RGB
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
+    # write the frame
+    out.write(frame)
+    
