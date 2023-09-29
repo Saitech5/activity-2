@@ -61,4 +61,5 @@ img = pyautogui.screenshot()
  frmae = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Typo: Should be 'frame', not 'frmae'
 # Write the frame to the output
 output.write(frmae)  # Typo: Should be 'frame', not 'frmae'
+# Break the loop on 'q' key press
 
