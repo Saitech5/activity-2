@@ -62,4 +62,8 @@ img = pyautogui.screenshot()
 # Write the frame to the output
 output.write(frmae)  # Typo: Should be 'frame', not 'frmae'
 # Break the loop on 'q' key press
-
+ if cv2.waitKey(1) == ord("q"):
+        break
+# Release resources
+output.release()
+cv2.destroyAllWindows()
