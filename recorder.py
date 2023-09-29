@@ -40,3 +40,20 @@ for i in range(int(record_seconds * fps)):
 # make sure everything is closed when exited
 cv2.destroyAllWindows()
 out.release()
+
+
+
+
+//This is the code which i wrote sai: 
+import cv2
+import pyautogui
+# Screen resolution
+screen_width = 1920
+screen_height = 1080
+
+# Set up video codec and writer
+fourcc = cv2.VideoWriter_fourcc(*"XVID")
+output = cv2.VideoWriter("recorded.avi", fourcc, 20.0, (screen_width, screen_height))
+while True:
+# Capture the screen
+img = pyautogui.screenshot()
