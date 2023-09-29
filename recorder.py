@@ -44,7 +44,7 @@ out.release()
 
 
 
-//This is the code which i wrote sai: 
+##This is the code which i wrote sai: 
 import cv2
 import pyautogui
 # Screen resolution
