@@ -57,3 +57,5 @@ output = cv2.VideoWriter("recorded.avi", fourcc, 20.0, (screen_width, screen_hei
 while True:
 # Capture the screen
 img = pyautogui.screenshot()
+# Introduce a typo in the following line
+
