@@ -60,7 +60,7 @@ img = pyautogui.screenshot()
 # Introduce a typo in the following line
  frmae = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Typo: Should be 'frame', not 'frmae'
 # Write the frame to the output
-output.write(frmae)  # Typo: Should be 'frame', not 'frmae'
+output.write(frame)  # Typo: Should be 'frame', not 'frmae'
 # Break the loop on 'q' key press
  if cv2.waitKey(1) == ord("q"):
         break
