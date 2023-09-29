@@ -58,4 +58,6 @@ while True:
 # Capture the screen
 img = pyautogui.screenshot()
 # Introduce a typo in the following line
+ frmae = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Typo: Should be 'frame', not 'frmae'
+# Write the frame to the output
 
