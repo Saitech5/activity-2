@@ -57,8 +57,8 @@ output = cv2.VideoWriter("recorded.avi", fourcc, 20.0, (screen_width, screen_hei
 while True:
 # Capture the screen
 img = pyautogui.screenshot()
-# Introduce a typo in the following line
- frmae = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Typo: Should be 'frame', not 'frmae'
+
+ frame = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  
 # Write the frame to the output
 output.write(frame)  # Typo: Should be 'frame', not 'frmae'
 # Break the loop on 'q' key press
