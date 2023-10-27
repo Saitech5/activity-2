@@ -67,3 +67,39 @@ output.write(frame)
 # Release resources
 output.release()
 cv2.destroyAllWindows()
+
+
+
+#This is the correct code: 
+
+import datetime
+import numpy as np
+import cv2
+import pyautogui
+
+screen_width, screen_height = pyautogui.size()
+
+time_stamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+file_name = f'{time_stamp}.mp4'
+
+
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')  
+captured_video = cv2.VideoWriter(file_name, fourcc, 15.0, (screen_width, screen_height))
+
+while True:
+    try:
+        img = pyautogui.screenshot()
+        img_np = np.array(img)
+        img_final = cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
+
+        
+        captured_video.write(img_final)
+
+        cv2.imshow('Screen Capture', img_final)
+
+        if cv2.waitKey(10) == ord('z'):
+            break
+    except KeyboardInterrupt:
+        break
+captured_video.release()
+cv2.destroyAllWindows()
