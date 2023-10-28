@@ -103,5 +103,3 @@ while True:
         break
 captured_video.release()
 cv2.destroyAllWindows()
-
-k
